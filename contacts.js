@@ -18,10 +18,8 @@ function listContacts() {
             throw Error(error);
         }
             console.table(JSON.parse(data));
-        
-    });
-    console.log(listContacts)
- }
+            });
+    }
 // получить контакт по идентификатору 
 function getContactById(contactId) {
   fs.readFile(contactsPath, (error, data) => {
@@ -64,6 +62,7 @@ function addContact(name, email, phone) {
     console.table(newContacts);
   });
 }
+
 
 module.exports = {
     listContacts,
