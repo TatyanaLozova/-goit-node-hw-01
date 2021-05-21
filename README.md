@@ -15,4 +15,4 @@
 
 ### node index.js --action remove --id=3
 
-![Task]()
+![Task](./img/4.png)
